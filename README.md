@@ -142,7 +142,21 @@ You can extend the pipeline to **automatically deploy** to cloud platforms:
   - `appleboy/ssh-action`
   - `scp-action` or `rsync-action`
 
-Let me know when you're ready for deployment steps!
+<h2>📁 Folder Structure</h2>
+
+```
+mern-web-app/
+├── client/                     # React frontend
+├── server/                     # Express backend
+│   ├── Dockerfile              # Docker build instructions
+│   ├── package.json            # Backend dependencies
+│   └── ...                     # Other backend files
+├── .github/
+│   └── workflows/
+│       └── main.yml            # GitHub Actions CI/CD pipeline
+├── README.md                   # Project documentation
+└── .env                        # Environment variables (if used)
+```
 
 <h2>🤝 Contribution Guidelines</h2>
 Contributions and improvements are welcome! Feel free to fork, improve, or raise issues.
